@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-let COLORTYPE : [UIColor] = [UIColor.yellowColor(),UIColor.blueColor(),UIColor.redColor(),UIColor.greenColor(),UIColor.orangeColor(),UIColor.purpleColor(), UIColor.brownColor()]
+var COLORTYPE : [UIColor] = [UIColor.yellowColor(),UIColor.blueColor(),UIColor.redColor(),UIColor.greenColor(),UIColor.orangeColor(),UIColor.purpleColor(), UIColor.brownColor(), UIColor.darkGrayColor(), UIColor.magentaColor(), UIColor.whiteColor()]
 
 struct PhysicsCollision{
     static let BallCat : UInt32 = 0b1
@@ -18,7 +18,7 @@ struct PhysicsCollision{
 class MainGameScene: SKScene, SKPhysicsContactDelegate{
     
     var mScore : Int = 0
-    var mTime : Int = 60
+    var mTime : Int = 10
     
     var mFirstMaster : Int = Int(arc4random_uniform(UInt32(COLORTYPE.count)))
     
@@ -53,10 +53,12 @@ class MainGameScene: SKScene, SKPhysicsContactDelegate{
                 
                 if locCheckBall?.fillColor == locMast?.fillColor{
                     mScore += 1
+                    mTime += 5
                 }else{
                     mScore -= 1
+                    mTime -= 10
                 }
-                
+                locBall.physicsBody?.applyImpulse(CGVectorMake(random(-10,max:10)*0.75,random(-10,max:10)*0.75))
                 locMast?.fillColor = COLORTYPE[Int(arc4random_uniform(UInt32(COLORTYPE.count)))]
             }
         }
@@ -146,7 +148,7 @@ class MainGameScene: SKScene, SKPhysicsContactDelegate{
         locBall.physicsBody?.restitution = aRest
         locBall.physicsBody?.linearDamping = aDamp
         locBall.physicsBody?.angularDamping = aAngDamp
-        locBall.physicsBody?.applyImpulse(CGVectorMake(random(-10,max:10),random(-10,max:10)))
+        locBall.physicsBody?.applyImpulse(CGVectorMake(random(-10,max:10)*0.5,random(-10,max:10)*0.5))
         locBall.physicsBody?.categoryBitMask = PhysicsCollision.BallCat
         locBall.physicsBody?.contactTestBitMask = PhysicsCollision.BallCat
         
