@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B25B4885-9291-46A9-89DE-A60F721BD44F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BallGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABBCA2602A40BEE664042419ADC6E756C1CD6840</key>
+		<string>https://bitbucket.org/Clodial/swiftgame1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BallGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABBCA2602A40BEE664042419ADC6E756C1CD6840</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/Clodial/swiftgame1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABBCA2602A40BEE664042419ADC6E756C1CD6840</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABBCA2602A40BEE664042419ADC6E756C1CD6840</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BallGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

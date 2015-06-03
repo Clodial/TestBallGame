@@ -15,6 +15,8 @@
 		40B773831B1DF2E000466BCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B773821B1DF2E000466BCD /* Images.xcassets */; };
 		40B773861B1DF2E000466BCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B773841B1DF2E000466BCD /* LaunchScreen.xib */; };
 		40B773921B1DF2E000466BCD /* BallGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B773911B1DF2E000466BCD /* BallGameTests.swift */; };
+		40B7739E1B1E0E1800466BCD /* MainGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7739D1B1E0E1800466BCD /* MainGameScene.swift */; };
+		40B774041B1E517F00466BCD /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B774031B1E517F00466BCD /* EndGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		40B7738B1B1DF2E000466BCD /* BallGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B773901B1DF2E000466BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B773911B1DF2E000466BCD /* BallGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallGameTests.swift; sourceTree = "<group>"; };
+		40B7739D1B1E0E1800466BCD /* MainGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGameScene.swift; sourceTree = "<group>"; };
+		40B774031B1E517F00466BCD /* EndGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		40B773741B1DF2E000466BCD /* BallGame */ = {
 			isa = PBXGroup;
 			children = (
+				40B7739D1B1E0E1800466BCD /* MainGameScene.swift */,
+				40B774031B1E517F00466BCD /* EndGameScene.swift */,
 				40B773771B1DF2E000466BCD /* AppDelegate.swift */,
 				40B773791B1DF2E000466BCD /* GameScene.sks */,
 				40B7737B1B1DF2E000466BCD /* GameScene.swift */,
@@ -222,6 +228,8 @@
 				40B7737C1B1DF2E000466BCD /* GameScene.swift in Sources */,
 				40B7737E1B1DF2E000466BCD /* GameViewController.swift in Sources */,
 				40B773781B1DF2E000466BCD /* AppDelegate.swift in Sources */,
+				40B7739E1B1E0E1800466BCD /* MainGameScene.swift in Sources */,
+				40B774041B1E517F00466BCD /* EndGameScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +425,7 @@
 				40B773971B1DF2E000466BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40B773981B1DF2E000466BCD /* Build configuration list for PBXNativeTarget "BallGameTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +434,7 @@
 				40B7739A1B1DF2E000466BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
