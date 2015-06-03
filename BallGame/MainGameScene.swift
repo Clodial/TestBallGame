@@ -72,7 +72,7 @@ class MainGameScene: SKScene, SKPhysicsContactDelegate{
         self.addChild(mMasterColor)
     }
     func createGameContainer(){
-        let locBox : CGRect = CGRectMake(0,0,250,250)
+        let locBox : CGRect = CGRectMake(0,0,300,300)
         let mGameContainer : SKShapeNode = SKShapeNode(rectOfSize: locBox.size)
         
         mGameContainer.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
@@ -110,7 +110,6 @@ class MainGameScene: SKScene, SKPhysicsContactDelegate{
 
     }
     func createBalls(aNumber: Int){
-        
         for var i = 0; i < aNumber; i++ {
             self.createSingleBall(COLORTYPE[i], aFric: 0, aRest: 1, aDamp: 0, aAngDamp: 0)
         }
@@ -147,10 +146,15 @@ class MainGameScene: SKScene, SKPhysicsContactDelegate{
         locBall.physicsBody?.restitution = aRest
         locBall.physicsBody?.linearDamping = aDamp
         locBall.physicsBody?.angularDamping = aAngDamp
-        println(CGFloat(Int(arc4random()-5)%1))
-        locBall.physicsBody?.applyImpulse(CGVectorMake(10,10))
+        locBall.physicsBody?.applyImpulse(CGVectorMake(random(-10,max:10),random(-10,max:10)))
         locBall.physicsBody?.categoryBitMask = PhysicsCollision.BallCat
         locBall.physicsBody?.contactTestBitMask = PhysicsCollision.BallCat
         
+    }
+    func random() -> CGFloat{
+        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
+    }
+    func random(min: CGFloat, max: CGFloat) -> CGFloat{
+        return random() * (max - min) + min
     }
 }
